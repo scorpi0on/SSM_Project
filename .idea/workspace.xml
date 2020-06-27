@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="0fbedd30-215a-4b86-9b32-51917d93e8e3" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\Java\apache-maven\repository" />
+        <option name="mavenHome" value="$PROJECT_DIR$/../../Java/apache-maven" />
+        <option name="userSettingsFile" value="D:\Java\apache-maven\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1dOHn240VaMWfLE2yXIPxRY5q8e" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0fbedd30-215a-4b86-9b32-51917d93e8e3" name="Default Changelist" comment="" />
+      <created>1592289382895</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1592289382895</updated>
+      <workItem from="1592289386510" duration="47000" />
+      <workItem from="1592289443807" duration="129000" />
+      <workItem from="1592289648896" duration="109000" />
+      <workItem from="1592834040791" duration="143000" />
+      <workItem from="1593016517731" duration="63000" />
+      <workItem from="1593235456092" duration="10000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="565" y="151" key="FileChooserDialogImpl" timestamp="1592289563919">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="565" y="151" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1592289563919" />
+    <state x="243" y="0" key="new project wizard" timestamp="1593016579487">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="194" y="0" key="new project wizard/0.0.1536.834@0.0.1536.834" timestamp="1592834171321" />
+    <state x="243" y="0" key="new project wizard/0.0.1920.1050@0.0.1920.1050" timestamp="1593016579487" />
+  </component>
+</project>
