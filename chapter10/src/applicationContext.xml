@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd
+       http://www.springframework.org/schema/context  http://www.springframework.org/schema/context/spring-context.xsd
+        http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd">
+    <context:property-placeholder location="classpath:db.properties" />
+<!--     1.配置数据源-->
+    <bean id="dataSource"
+          class="org.apache.commons.dbcp2.BasicDataSource" >
+        <property name="driverClassName" value="${jdbc.driver}" />
+        <property name="url" value="${jdbc.url}" />
+        <property name="username" value="${jdbc.username}" />
+        <property name="password" value="${jdbc.password}" />
+        <property name="maxTotal" value="${jdbc.maxTotal}" />
+        <property name="maxIdle" value="${jdbc.maxIdle}" />
+        <property name="initialSize" value="${jdbc.initialSize}" />
+
+    </bean>
+
+<!--2.事务管理器，依赖于数据源-->
+    <bean id="transactionManager"
+          class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property name="dataSource" ref="dataSource" />
+    </bean>
+    <!--2.1编写通知：对事务进行增强，需要编写对切入点和具体执行事务细节-->
+    <tx:annotation-driven transaction-manager="transactionManager" />
+<!--    3.配置mybatis工厂-->
+    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <property name="dataSource" ref="dataSource" />
+        <property name="configLocation" value="classpath:mybatis-config.xml" />
+    </bean>
+
+    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+        <property name="basePackage" value="com.ssm.mapper" />
+    </bean>
+
+    <!--    4.实例化Dao-->
+    <bean id="userDao" class="com.ssm.dao.impl.UserDaoImpl">
+        <property name="sqlSessionFactory" ref="sqlSessionFactory" />
+    </bean>
+    <bean id="userMapper" class="org.mybatis.spring.mapper.MapperFactoryBean">
+        <property name="mapperInterface" value="com.ssm.mapper.UserMapper" />
+        <property name="sqlSessionFactory" ref="sqlSessionFactory" />
+    </bean>
+</beans>
