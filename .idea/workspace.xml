@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0fbedd30-215a-4b86-9b32-51917d93e8e3" name="Default Changelist" comment="" />
+    <list default="true" id="0fbedd30-215a-4b86-9b32-51917d93e8e3" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/Chapter11.md" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter11.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chapter11/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter11/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chapter11/src/main/java/com/ssm/controller/ControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter11/src/main/java/com/ssm/controller/ControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chapter11/src/main/resources/springmvc-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter11/src/main/resources/springmvc-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chapter11/target/chapter11.war" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter11/target/chapter11.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chapter11/target/chapter11/WEB-INF/classes/com/ssm/controller/ControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter11/target/chapter11/WEB-INF/classes/com/ssm/controller/ControllerTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chapter11/target/chapter11/WEB-INF/classes/springmvc-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter11/target/chapter11/WEB-INF/classes/springmvc-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chapter11/target/chapter11/WEB-INF/lib/spring-aop-5.2.7.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chapter11/target/classes/com/ssm/controller/ControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter11/target/classes/com/ssm/controller/ControllerTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chapter11/target/classes/springmvc-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter11/target/classes/springmvc-config.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -47,6 +58,7 @@
       <workItem from="1592834040791" duration="143000" />
       <workItem from="1593016517731" duration="63000" />
       <workItem from="1593235456092" duration="10000" />
+      <workItem from="1594305226752" duration="1000" />
     </task>
     <servers />
   </component>
