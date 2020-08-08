@@ -13,7 +13,7 @@ public class UserServiceImpl implements UserService {
     @Autowired
     private UserDao userDao;
     @Override
-    public User findUserByID(Integer id) {
+    public User findUserById(Integer id) {
         return this.userDao.findUserById(id);
     }
 }
