@@ -22,7 +22,7 @@
 	<mvc:resources location="/css/" mapping="/css/**"></mvc:resources>
 	<mvc:resources location="/images/" mapping="/images/**"></mvc:resources>
 	<!-- 定义视图解析器 -->
-	<bean id="viewResoler"
+	<bean id="viewResolver"
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 		<!-- 设置前缀 -->
 		<property name="prefix" value="/WEB-INF/jsp/" />

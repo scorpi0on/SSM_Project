@@ -5,6 +5,7 @@ import com.ssm.po.User;
 import com.ssm.service.RoleService;
 import com.ssm.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -15,6 +16,7 @@ import javax.servlet.http.HttpSession;
 import java.util.Date;
 import java.util.List;
 
+@Controller
 public class UserController {
     @Autowired
     private UserService userService;
@@ -22,7 +24,7 @@ public class UserController {
     private RoleService roleService;
 
     @RequestMapping(value = "/findUserList.action")
-    public String findUserlist(String keywords, Integer userListRoleId, Model model){
+    public String findUserList(String keywords, Integer userListRoleId, Model model){
         List<Role> roleList = roleService.findRoleList();
         model.addAttribute("roleList", roleList);
 
@@ -160,6 +162,7 @@ public class UserController {
     @RequestMapping(value="/login.action",method=RequestMethod.POST)
     public String login(String loginName,String password,Model model,HttpSession session){
         //通过用户名和密码查询用户
+        System.out.println(loginName + " " + password);
         User user=userService.findUser(loginName, password);
         if(user!=null){
             if (user.getStatus().equals("2")) {
