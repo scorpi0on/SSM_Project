@@ -1,10 +1,11 @@
 package com.ssm.service.impl;
-import java.util.List;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
 import com.ssm.dao.UserDao;
 import com.ssm.po.User;
 import com.ssm.service.UserService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import java.util.List;
 @Service("userService")
 /*
  * 用户Service接口实现类
@@ -48,3 +49,4 @@ public class UserServiceImpl implements UserService{
 		return userDao.setUserStatus(user);
 	}
 }
+

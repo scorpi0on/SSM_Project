@@ -164,6 +164,8 @@ public class UserController {
         //通过用户名和密码查询用户
         System.out.println(loginName + " " + password);
         User user=userService.findUser(loginName, password);
+        System.out.println(user);
+
         if(user!=null){
             if (user.getStatus().equals("2")) {
                 //用户被启用时，允许登录到后台
