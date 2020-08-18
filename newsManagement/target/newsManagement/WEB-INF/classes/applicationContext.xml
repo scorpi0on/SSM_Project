@@ -23,7 +23,7 @@
 		<!--数据库驱动 -->
 		<property name="driverClassName" value="${jdbc.driver}" />
 		<!--连接数据库的ur1 -->
-		<property name="url" value="${jdbc.url}" />
+		<property name="url" value="${jdbc.url}?serverTimezone=UTC" />
 		<!--连接数据库的用户名 -->
 		<property name="username" value="${jdbc.username}" />
 		<!--连接数据库的密码-->

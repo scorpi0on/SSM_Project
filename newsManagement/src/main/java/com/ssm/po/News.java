@@ -13,7 +13,7 @@ public class News {
     private String author;
     private Date publishTime;
     private Integer clicks;
-    private String pusblishStatus;
+    private String publishStatus;
     private Integer categoryId;
     private Integer userId;
 
@@ -97,12 +97,12 @@ public class News {
         this.clicks = clicks;
     }
 
-    public String getPusblishStatus() {
-        return pusblishStatus;
+    public String getPublishStatus() {
+        return publishStatus;
     }
 
-    public void setPusblishStatus(String pusblishStatus) {
-        this.pusblishStatus = pusblishStatus;
+    public void setPublishStatus(String pusblishStatus) {
+        this.publishStatus = pusblishStatus;
     }
 
     public Integer getCategoryId() {
@@ -134,7 +134,7 @@ public class News {
                 ", author='" + author + '\'' +
                 ", publishTime=" + publishTime +
                 ", clicks=" + clicks +
-                ", pusblishStatus='" + pusblishStatus + '\'' +
+                ", pusblishStatus='" + publishStatus + '\'' +
                 ", categoryId=" + categoryId +
                 ", userId=" + userId +
                 '}';

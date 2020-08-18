@@ -47,7 +47,7 @@ $(function(){
 						<span><img src="images/leftico02.png" /></span>新闻类别管理
 					</div>
 					<ul class="menuson">
-						<li><cite></cite><a href="${pageContext.request.contextPath}/findCategoryList.action"
+						<li><cite></cite><a href="${pageContext.request.contextPath}/findNewsByPage.action"
 							target="rightFrame">新闻类别列表</a><i></i></li>
 					</ul>
 				</dd>
